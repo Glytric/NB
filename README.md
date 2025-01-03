@@ -1,0 +1,2 @@
+# NB
+ Note for learning
