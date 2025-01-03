@@ -4,3 +4,8 @@
 \contentsline {subsection}{\numberline {2.2}有限群部分概念}{1}{}%
 \contentsline {subsection}{\numberline {2.3}重排定理和乘法表}{2}{}%
 \contentsline {subsection}{\numberline {2.4}子群、陪集和类}{2}{}%
+\contentsline {section}{\numberline {3}群的线性表示理论}{3}{}%
+\contentsline {subsection}{\numberline {3.1}线性表示基本概念}{3}{}%
+\contentsline {subsection}{\numberline {3.2}等价表示和可约表示}{4}{}%
+\contentsline {subsection}{\numberline {3.3}不等价不可约表示}{4}{}%
+\contentsline {subsection}{\numberline {3.4}新表示构成}{5}{}%
