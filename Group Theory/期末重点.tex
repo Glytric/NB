@@ -1,6 +1,6 @@
 \documentclass{ctexart}
 \usepackage{amsmath}
-
+\usepackage{hyperref}
 \begin{document}
 
 \title{群论期末重点复习}
@@ -150,6 +150,14 @@ D_{PR}=\begin{cases}
 \sum_{R\in G}D^{i}_{\mu\rho}(R)^{*}D^{j}_{\nu\lambda}(R)=\frac{g}{m_{j}}\delta_{ij}\delta_{\mu\nu}\delta_{\rho\lambda}
 \]
 其中$m_{j}$为$D^{j}$的维数,$g$为群$G$的阶.\\
+取$\rho=\mu,\lambda=\nu$,对$\rho\lambda$求和,则有特征标第一正交定理:
+\[
+\sum_{R\in G}\sum_{\rho\lambda}D^{i}_{\rho\rho}(R)^{*}D^{j}_{\lambda\lambda}(R)=\frac{g}{m_{j}}\delta_{ij}\sum_{\rho\lambda}\delta_{\rho\lambda}\delta_{\rho\lambda}
+\]
+即
+\[
+\sum_{R\in G}\chi^{i}(R)^{*}\chi^{j}(R)=g\delta_{ij}
+\]
 
 \noindent 完备性定理:有限群不等价不可约表示维数的平方和等于群的阶数:
 \[
@@ -171,10 +179,53 @@ f(R)=f(SRS^{-1})=\sum_{j}C_{j}\chi^{j}(R),\quad C_{j}=\frac{1}{g}\sum_{R\in G}\c
 \]
 很容易得到有限群不等价不可约表示的个数等于群的类数.
 
-这给出了特征标在群表示理论中的重要地位,也是为什么群表示的特征标表如此重要且
+这说明了特征标在群表示理论中的重要地位,也是为什么群表示的特征标表如此重要且
 被列为考试重点.
 
+\subsection{可约表示向不可约表示的约化}
+
+对于可约表示,总可以通过相似变换$X$将其变为已约表示,即不可约表示的直和:
+\[
+X^{-1}D(R)X=\oplus a_{j}D^{j}(R), \quad \chi(R)=\sum_{j}a_{j}\chi^{j}(R)
+\]
+$a_{j}$为不可约表示$D^{j}(R)$在$D(R)$中的重数.将上面的群函数对特征标做展开中的群函数替换为特征标,可以得到$a_{j}$的表达式:
+\[
+a_{j}=\frac{1}{g}\sum_{R\in G} \chi^{j}(R)^{*}\chi(R)
+\]
+表示为不可约表示的判据是:$\sum_{R\in G}\left|\chi(R)\right|^{2}=g$,若大于,则此表示可约.\\
+
+如何将可约表示化为不可约表示:
+\begin{enumerate}
+    \item 选取一组生成元,写出其在此表示下的表示矩阵.
+    \item 计算$\sum_{R\in G}\left|\chi(R)\right|^{2}$,判断表示是否可约.
+    \item 若可约,给出此群对应的不可约表示个数及维数.判据有二:不等价不可约表示个数的和为类数;不等价不可约表示维数的平方和为群的阶.
+    \item 计算此表示约化后各不等价不可约表示的重数$a_{j}=\frac{1}{g}\sum_{R\in G} \chi^{j}(R)^{*}\chi(R)$,并给出在选择约化的次序下给出之前选取生成元的表示矩阵.
+    \item 将各生成元的两个表示矩阵代入$X^{-1}D(R)X=\oplus a_{j}D^{j}(R)$,即可以给出变换矩阵$X$.
+    \item 给出基矢变换$\phi_{\mu}=\sum_{\nu}\psi_{\nu}X_{\nu\mu}$
+\end{enumerate}
+
+结合第3章作业第17题边做边看食用更佳.
+
 \subsection{新表示构成}
+这里仅简单提及，因为不是考试内容但是和特征标表的填写有关.
+
+\begin{enumerate}
+    \item 商群的不可约表示也是原群的不可约表示.
+    \item 直乘群的不可约表示可以表示为两子群不可约表示的直乘.
+\end{enumerate}
+
+\subsection{不可约表示的特征标表}
+
+要顺利写出一个群的特征标表,以下几点性质是必须牢记的:
+\begin{enumerate}
+    \item 不等价不可约表示的数目为类的个数.
+    \item 不等价不可约表示维数的平方和为群的阶.
+    \item 恒元的特征标为不可约表示的维数.
+    \item 恒等表示的特征标均为1.
+    \item 除了恒等表示,每一行特征标乘类中元素数目求和等于0.
+    \item 每一列特征标平方和乘类中元素数目等于群的阶.
+    \item 
+\end{enumerate}
 
 
 
