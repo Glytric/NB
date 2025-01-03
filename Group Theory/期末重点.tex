@@ -7,6 +7,9 @@
 \maketitle
 
 \tableofcontents
+\newpage
+
+\setcounter{page}{1}
 
 \section{前言}
 
@@ -24,8 +27,62 @@
 
 \section{群的基本概念}
 
-本章主要
+本章主要给出了群的基本概念和乘法表、群的子集、同态同构、点群空间群简介这些内
+容。
 
+\subsection{群的定义}
+
+$G$是一些元素的集合，$\forall R$、$S$、$T$为$G$中元素，定义二元运算$RS$，
+满足以下四个条件的$G$称为群：
+
+\begin{enumerate}
+    \item 封闭性：$RS\in G$
+    \item 结合律：$R(ST)=(RS)T$
+    \item 恒元：$\exists E\in G, ER=R$
+    \item 逆元：$\exists R^{-1}\in G, R^{-1}R=E$
+\end{enumerate}
+
+\subsection{有限群部分概念}
+
+\begin{enumerate}
+    \item 有限群的阶: 群的元素数目.
+    \item 群元素的阶: 对群元素$R$, 使$R^{n}=E$成立的最小正整数n.
+    \item 周期: 由群元$R$及其所有幂次构成的集合$\left\{R,R^{2},\ldots,R^{n}
+=E \right\}$.
+    \item 生成元: 能够通过乘积生成整个群$G$中所有元素的一组最少群元.
+    \item 有限群的秩: 生成元的数目.
+\end{enumerate}
+
+\subsection{重排定理和乘法表}
+
+\begin{enumerate}
+    \item 重排定理:  群中任意元素和群中所有元素做乘积,得到的集合和原群相同.
+    \item 乘法表: 有限群的二元运算规则，群的全部性质都体现在群的乘法表中。对
+    于有限群，群元素数目有限，我们可能把元素的乘积全部排列出来，构成一个表，
+    称为群的乘法表，简称群表。
+\end{enumerate}
+
+重排定理在乘法表中的应用:
+\begin{enumerate}
+    \item 乘法表的每一行 (列)都是所有群元的一个重新排列.
+    \item 任一群元素在乘法表中的每一行 (列)中只出现一次.
+\end{enumerate}
+
+借助重排定理,我们只需要知道群$G$中少数几个乘积结果就能够直接给出乘法表.
+
+\subsection{子群、陪集和类}
+
+\begin{enumerate}
+    \item 子群: $H$是群$G$的子集,且定义有和$G$相同的运算规则,若满足群的四条
+    定义,就称$H$是$G$的子群,记为$H\subset G$
+    \item 陪集: 设$H$是$G$的子群,$\forall R \notin H$且$R\in G$,则$RH$和
+    $HR$分别称为$H$的左陪集和右陪集.
+    \item 陪集性质: 陪集$RH$和$H$没有公共元素,且自身没有重复元素.
+    \item 陪集定理: $H$的左右陪集$RH$和$HR$,要么拥有完全相同的元素,要么拥有
+    完全不同的元素.
+    \item 拉格朗日定理: 群$G$的阶$g$一定是子群$H$的阶$h$的整数倍,$g=dh$,$d
+    $为正整数,称为子群$H$的指数.
+\end{enumerate}
 
 
 
