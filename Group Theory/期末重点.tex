@@ -12,6 +12,8 @@
 \affil[2]{中国科学院大学物理学院}
 \maketitle
 
+\setcounter{tocdepth}{2}%%设置目录深度到subsection
+
 \tableofcontents
 \newpage
 
@@ -384,7 +386,7 @@ T_{2}&3&-1&0&-1&1\\
     \item 按照Littlewood-Richardson规则,写出:置换群某表示的外积,约化为一系列置换群不可约表示的直和,并验证维数.
 \end{enumerate}
 
-置换群的基本概念在考察中并不重要,所以我直接从置换群和杨图杨表杨算符的关系开始.
+置换群的基本概念在考察中并不重要,所以我直接从置换群和杨图杨表杨算符的关系开始.本章我的部分分析过程非常粗暴,有部分错误,但是能够得到正确的结果,旨在帮助大家应对考试,望海涵.
 
 \subsection{杨图,杨表,杨算符}
 
@@ -441,7 +443,78 @@ T_{2}&3&-1&0&-1&1\\
 
 \subsection{列表法计算置换群不可约表示矩阵}
 
-上一节中提到,每个正则杨图$[\lambda]$都唯一地对应置换群$S_{n}$的一个不可约表示,且此不可约表示的维数等于杨图$[\lambda]$对应的正则杨表的个数.我们在这里不讨论表示的基是什么、如何由理想和幂等元给出等等，仅给出解决计算表示矩阵的步骤和
+上一节中提到,每个正则杨图$[\lambda]$都唯一地对应置换群$S_{n}$的一个不可约表示,且此不可约表示的维数等于杨图$[\lambda]$对应的正则杨表的个数.我们在这里不讨论表示的基是什么、如何由理想和幂等元给出等等，仅给出计算表示矩阵的必需知识和计算步骤.
+
+解决问题:计算置换$R$在表示$[\lambda]$中的表示矩阵.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{GP3.png}
+\end{figure}
+
+\subsubsection{给出表示的基}
+
+在置换群中,表示的基为群代数,是若干置换的线性组合,则其一定可以写为若干杨算符的线性组合,于是我们用杨图$[\lambda]$的杨表的线性组合来指代这个群代数.
+
+如何找出这些杨表?一个简单的想法是直接从正则杨表开始,因为它们的个数正好等于此表示的维数.列出此杨图的所有正则杨表,并由此构造出互相正交的杨表线性组合,即是我们想要的基.
+
+考虑这些正则杨表$\mathcal{Y}_{\mu}$的杨算符$\mathcal{Y}_{\mu}$,如果这些杨算符的乘积$\mathcal{Y}_{\mu}\mathcal{Y}_{\nu}$为零,则它们相互正交;如果不为零,则需要去掉非正交的分量才能作为基.
+
+在这里给出以下结论:
+\begin{enumerate}
+    \item 当$\mu>\nu$时,$\mathcal{Y}_{\mu}\mathcal{Y}_{\nu}=0$.
+    \item 当$\mu<\nu$时,需要比较杨表$\mathcal{Y}_{\mu}$中每一列出现的两个数字和杨表$\mathcal{Y}_{\nu}$中每一行出现的两个数字.如果没有任何两个数字是同时出现在杨表$\mathcal{Y}_{\mu}$的一列和杨表$\mathcal{Y}_{\nu}$的一行,则说明$\mathcal{Y}_{\mu}\mathcal{Y}_{\nu}\neq 0$,反之则$\mathcal{Y}_{\mu}\mathcal{Y}_{\nu}=0$.
+    \item 如果出现了$\mathcal{Y}_{\mu}\mathcal{Y}_{\nu}\neq 0$的情况,则需要寻找杨表$\mathcal{Y}_{\nu}$中的横向置换$P_{\mu\nu}$,它的效果是左乘在杨算符$\mathcal{Y}_{\nu}$上,即对杨表$\mathcal{Y}_{\nu}$做$P_{\mu\nu}$置换得到$\mathcal{Y}_{\nu}'$后,所有出现在$\mathcal{Y}_{\mu}$中同一列的数字均出现在了$\mathcal{Y}_{\nu}'$中对应的列中(如$\mathcal{Y}_{\mu}$中第一列的数字出现在$\mathcal{Y}_{\nu}'$中的第一列).
+    \item 如果没有出现步骤三中的情况,则$P_{\mu\nu}=0$.
+    \item 基由以下公式给出:\[y_{\mu}=\left(E-\sum_{\nu}P_{\mu\nu}\right)\mathcal{Y}_{\mu}\]
+    \item 若对$\mathcal{Y}_{\mu}$,所有的$P_{\mu\nu}$均为0,则其对应正交基$y_{\mu}=\mathcal{Y}_{\mu}$
+\end{enumerate}
+
+将得到的$y_{\mu}$按顺序写到待求表示矩阵的左边,即得到例题中左边的部分.
+
+\subsubsection{给出群元素的作用结果}
+
+实际的计算比较复杂,直观上理解作用结果是群元素$S$作为置换对正则杨表作用得到的杨表$S\mathcal{Y}_{\mu}$,即例题中待求矩阵的上部.
+
+\subsubsection{计算矩阵}
+
+矩阵元$D_{\mu\nu}$实际上是杨表运算的线性组合,所以按照类似4.2.1中提及的乘积判定规则计算每一个即可,但规则略有不同:对于杨表乘积$\mathcal{Y}_{\mu}\mathcal{Y}_{\nu}$
+\begin{enumerate}
+    \item 如果没有任何两个数字同时出现在$\mathcal{Y}_{\mu}$的一列内和$\mathcal{Y}_{\nu}$的一行内,则乘积$\mathcal{Y}_{\mu}\mathcal{Y}_{\nu}\neq 0$.对于这样两个杨表,给出$\mathcal{Y}_{\mu}$中的纵向置换$Q_{\nu\mu}$,使得$\mathcal{Y}_{\nu}'=Q_{\nu\mu}\mathcal{Y}_{\mu}$中的每个数字均出现在和这个数字在$\mathcal{Y}_{\nu}$出现的相同一行中.这个乘积结果规定为这个纵向置换$Q_{\nu\mu}$的置换宇称.
+    \item 不满足1中条件,则$\mathcal{Y}_{\mu}\mathcal{Y}_{\nu}=0$.
+\end{enumerate}
+
+注意:\begin{enumerate}
+    \item 矩阵元可能包含多个乘积,请注意不要遗漏.
+    \item 此结果仅用于计算,如有什么问题还请查阅教材,在此只能保证结果的准确性.
+\end{enumerate}
+
+\subsection{相邻元素对换在表示中的实正交形式}
+
+等效方法正则填充计算置换群的特征标表原理非常简单,但对于稍微高维数一些的表示就无能为力,所以我认为考试中不会涉及,故跳过,特此说明.
+
+实正交表示$\bar{D}^{[\lambda]}$可以通过4.2中得到的不可约表示做相似变换得到,但这里只给出简单的计算办法:设$P_{a}=(a,a+1)$,则$\bar{D}^{[\lambda]}(P_{a})$是由$1\times 1$,$2\times 2$子矩阵的直和构成的实正交矩阵.
+\begin{enumerate}
+    \item 当$a$和$a+1$在正则杨表$\mathcal{Y}_{\nu}^{[\lambda]}$中填在同一行(列)中时,有$1\times 1$子矩阵$\bar{D}^{[\lambda]}_{\nu\nu}=1$($-1$);
+    \item 当$a$和$a+1$在正则杨表$\mathcal{Y}_{\nu}^{[\lambda]}$中既不填在同一行也不填在同一列时,则交换$a$和$a+1$的位置,杨表$\mathcal{Y}_{\nu}^{[\lambda]}$变为$\mathcal{Y}_{\nu_{a}}^{[\lambda]}$,不失一般性,设杨表$\mathcal{Y}_{\nu}^{[\lambda]}$小于$\mathcal{Y}_{\nu_{a}}^{[\lambda]}$,则填入$2\times 2$子矩阵:\[\begin{pmatrix}
+        \bar{D}^{[\lambda]}_{\nu\nu} &\bar{D}^{[\lambda]}_{\nu\nu_{a}}\\
+        \bar{D}^{[\lambda]}_{\nu_{a}\nu} &\bar{D}^{[\lambda]}_{\nu_{a}\nu_{a}}
+    \end{pmatrix}=\frac{1}{m}\begin{pmatrix}
+        -1 &\sqrt{m^{2}-1} \\
+        \sqrt{m^{2}-1} &1
+    \end{pmatrix}\]
+    其中m是在杨表$\mathcal{Y}_{\nu}^{[\lambda]}$中从$a$走到$a+1$所需要的最短步数.
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
 
 
 
