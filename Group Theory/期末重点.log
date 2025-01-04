@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.21)  3 JAN 2025 19:52
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.21)  4 JAN 2025 11:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -478,43 +478,48 @@ LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <10.53937> not available
 LaTeX Font Info:    Font shape `TU/SimSun(0)/m/sl' in size <10.53937> not available
 (Font)              Font shape `TU/SimSun(0)/m/it' tried instead on input line 54.
  [1] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 116--119
+Overfull \hbox (8.57266pt too wide) in paragraph at lines 86--87
+[]\TU/SimSun(0)/m/n/10.53937 共 轭 类\TU/lmr/m/n/10.53937 : \TU/SimSun(0)/m/n/10.53937 所 有 相 互 共 轭 的 元 素 集 合\TU/lmr/m/n/10.53937 , \TU/SimSun(0)/m/n/10.53937 简 称 类\TU/lmr/m/n/10.53937 .$\OML/cmm/m/it/10.53937 C[] \OT1/cmr/m/n/10.53937 = \OMS/cmsy/m/n/10.53937 f\OML/cmm/m/it/10.53937 R[]\OMS/cmsy/m/n/10.53937 j\OML/cmm/m/it/10.53937 R[] \OT1/cmr/m/n/10.53937 = \OML/cmm/m/it/10.53937 SR[]S[]; S \OMS/cmsy/m/n/10.53937 2
+ []
+
+[3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 186--189
 
  []
 
-[3]
+[5] [6]
 Missing character: There is no µ ("B5) in font cmmi7!
 Missing character: There is no ν ("3BD) in font cmmi7!
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 171--173
+
+Underfull \hbox (badness 10000) in paragraph at lines 241--243
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--196
+Underfull \hbox (badness 10000) in paragraph at lines 264--266
 
  []
 
-
-Overfull \hbox (14.25473pt too wide) in paragraph at lines 202--203
+[7]
+Overfull \hbox (14.25473pt too wide) in paragraph at lines 272--273
 []\TU/SimSun(0)/m/n/10.53937 计 算 此 表 示 约 化 后 各 不 等 价 不 可 约 表 示 的 重 数 $\OML/cmm/m/it/10.53937 a[] \OT1/cmr/m/n/10.53937 = [] [][] \OML/cmm/m/it/10.53937 ^^_[]\OT1/cmr/m/n/10.53937 (\OML/cmm/m/it/10.53937 R\OT1/cmr/m/n/10.53937 )[]\OML/cmm/m/it/10.53937 ^^_\OT1/cmr/m/n/10.53937 (\OML/cmm/m/it/10.53937 R\OT1/cmr/m/n/10.53937 )$\TU/lmr/m/n/10.53937 ,
  []
 
-[5] [6] [7] (./期末重点.aux)
+[8] [9] [10] (./期末重点.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.41063pt have occurred.
 
 Package rerunfilecheck Info: File `期末重点.out' has not changed.
-(rerunfilecheck)             Checksum: 38F9F11C6962CD313074D8FCE8748814;1463.
+(rerunfilecheck)             Checksum: 5B1321FDA89F524B9D583BE82465E93E;1643.
  ) 
 Here is how much of TeX's memory you used:
  14831 strings out of 476660
  337119 string characters out of 5798842
- 1861698 words of memory out of 5000000
+ 1862698 words of memory out of 5000000
  34913 multiletter control sequences out of 15000+600000
  519541 words of font info for 84 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  89i,8n,97p,359b,436s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on 期末重点.pdf (8 pages).
+Output written on 期末重点.pdf (11 pages).
