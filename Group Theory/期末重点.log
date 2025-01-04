@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.21)  4 JAN 2025 11:40
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.21)  4 JAN 2025 13:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -483,7 +483,7 @@ Overfull \hbox (8.57266pt too wide) in paragraph at lines 86--87
  []
 
 [3] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 186--189
+Underfull \hbox (badness 10000) in paragraph at lines 176--179
 
  []
 
@@ -491,17 +491,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--189
 Missing character: There is no µ ("B5) in font cmmi7!
 Missing character: There is no ν ("3BD) in font cmmi7!
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--243
+Underfull \hbox (badness 10000) in paragraph at lines 231--233
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--266
+Underfull \hbox (badness 10000) in paragraph at lines 254--256
 
  []
 
 [7]
-Overfull \hbox (14.25473pt too wide) in paragraph at lines 272--273
+Overfull \hbox (14.25473pt too wide) in paragraph at lines 262--263
 []\TU/SimSun(0)/m/n/10.53937 计 算 此 表 示 约 化 后 各 不 等 价 不 可 约 表 示 的 重 数 $\OML/cmm/m/it/10.53937 a[] \OT1/cmr/m/n/10.53937 = [] [][] \OML/cmm/m/it/10.53937 ^^_[]\OT1/cmr/m/n/10.53937 (\OML/cmm/m/it/10.53937 R\OT1/cmr/m/n/10.53937 )[]\OML/cmm/m/it/10.53937 ^^_\OT1/cmr/m/n/10.53937 (\OML/cmm/m/it/10.53937 R\OT1/cmr/m/n/10.53937 )$\TU/lmr/m/n/10.53937 ,
  []
 
@@ -511,7 +511,7 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.41063pt have occurred.
 
 Package rerunfilecheck Info: File `期末重点.out' has not changed.
-(rerunfilecheck)             Checksum: 5B1321FDA89F524B9D583BE82465E93E;1643.
+(rerunfilecheck)             Checksum: 04C051D567CD4BDE5DB4A3EFE63AFA22;1711.
  ) 
 Here is how much of TeX's memory you used:
  14831 strings out of 476660
