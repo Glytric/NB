@@ -408,7 +408,7 @@ T_{2}&3&-1&0&-1&1\\
 这样得到的杨表即是正则杨表.例如:杨图[3,2]的全部正则杨表从小到大排列如下:
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{GP1.png}
+    \includegraphics[width=0.7\textwidth]{GP//GP1.png}
 \end{figure}
 正则杨表的个数由钩形数规则给出:
 \begin{enumerate}
@@ -438,7 +438,7 @@ T_{2}&3&-1&0&-1&1\\
 \end{enumerate}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{GP2.png}
+    \includegraphics[width=1\textwidth]{GP//GP2.png}
 \end{figure}
 
 \subsection{列表法计算置换群不可约表示矩阵}
@@ -449,7 +449,7 @@ T_{2}&3&-1&0&-1&1\\
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{GP3.png}
+    \includegraphics[width=1\textwidth]{GP//GP3.png}
 \end{figure}
 
 \subsubsection{给出表示的基}
@@ -506,7 +506,13 @@ T_{2}&3&-1&0&-1&1\\
     其中m是在杨表$\mathcal{Y}_{\nu}^{[\lambda]}$中从$a$走到$a+1$所需要的最短步数.
 \end{enumerate}
 
+\subsection{Littlewood-Richardson规则应用}
 
+Littlewood-Richardson规则使我们能方便地利用杨图计算置换群不可约表示诱导表示(外积)的约化.它主要能解决本开开头提到的最后两个问题:如何将置换群不可约表示的诱导表示约化为置换群不可约表示的直和、如何将置换群不可约表示作为子群的分导表示按子群的不可约表示约化.L-R规则如下:
+\begin{enumerate}
+    \item 对表示$[\lambda]\odot[\mu]$,取格数较多、格数相同时更小的杨表作为基础,此处假设为$[\lambda]$,将另一个杨图$[\mu]$的各行格子分别填入其所在行的行数,即第$j$行的格子填入$j$.
+    \item 将杨图$[\mu]$从第一行开始从上往下逐行将格子补到杨图$[\lambda]$上
+\end{enumerate}
 
 
 
